@@ -33,16 +33,16 @@
                                 <a class="nav-link active" aria-current="page" href="{{ url_for('simple_pages.show', page="index")}}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="about")}}">Github</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page1")}}">Github</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page1")}}">Docker</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page2")}}">Docker</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page2")}}">Python/Flask</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page3")}}">Python/Flask</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page3")}}">CI/CD</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page4")}}">CI/CD</a>
                             </li>
                         </ul>
                     </div>
@@ -56,7 +56,7 @@
     </div>
     <footer>
         Environment: {{ deployment_environment }} - Copyright: {{ year }}
-        Message: {{ mymessage }} {{ format_price(100) }}
+        Message: {{ mymessage }}
     </footer>
 
 </div>

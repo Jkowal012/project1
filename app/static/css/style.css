@@ -1,3 +1,17 @@
 body {
 font-size: 200%;
 }
+
+.container-fluid{
+    font-size: 90%
+}
+footer {
+    font-size: 90%
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height:50vh;
+}
