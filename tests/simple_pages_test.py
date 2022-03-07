@@ -2,9 +2,9 @@
 
 def test_request_main_menu_links(client):
     """This makes the navbar"""
-    response = client.get("/templates/base")
-    assert response.status_code == 308
-    assert b'<a class="nav-link" href="/index">Home</a>' in response.data
+    response = client.get("/")
+    assert response.status_code == 200
+    assert b'<a class="nav-link active" aria-current="page" href="{{ url_for('simple_pages.show', page="index")}}">Home</a>' in response.data
     assert b'<a class="nav-link" href="/page1">Github</a>' in response.data
     assert b'<a class="nav-link" href="/page2">Docker</a>' in response.data
     assert b'<a class="nav-link" href="/page3">Python/Flask</a>' in response.data
