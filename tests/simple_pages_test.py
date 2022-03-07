@@ -40,3 +40,7 @@ def test_request_page4(client):
     assert response.status_code == 200
     assert b"Continuous Development/Continuous Deployment" in response.data
 
+def test_request_page_not_found(client):
+    """This makes page not found"""
+    response = client.get("/page5")
+    assert response.status_code == 404
