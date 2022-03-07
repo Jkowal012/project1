@@ -2,7 +2,7 @@
 
 def test_request_main_menu_links(client):
     """This makes the navbar"""
-    response = client.get("/")
+    response = client.get("/base")
     assert response.status_code == 200
     assert b'<a class="nav-link" href="/index">Home</a>' in response.data
     assert b'<a class="nav-link" href="/page1">Github</a>' in response.data
